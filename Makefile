@@ -20,4 +20,4 @@ PROTO_INCLUDE_PATHS += .
 		$(@D)/*.proto
 
 artifacts/protobuf/bin/protoc-gen-go: go.mod
-	GOBIN="$(MF_PROJECT_ROOT)/artifacts/protobuf/bin" go install github.com/golang/protobuf/protoc-gen-go
+	GOBIN="$(MF_PROJECT_ROOT)/artifacts/protobuf/bin" go get github.com/golang/protobuf/protoc-gen-go
